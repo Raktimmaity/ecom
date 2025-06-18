@@ -5,6 +5,7 @@ import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import SearchBar from "./SearchBar";
 import CartDrawer from "../Layout/CartDrawer";
 import { IoIosClose } from "react-icons/io";
+import logo from "../../assets/logo1.png";
 
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -21,7 +22,8 @@ const Navbar = () => {
         {/* Left logo */}
         <div>
           <Link to="/" className="text-2xl font-medium">
-            Raphaa
+            {/* Raphaa */}
+            <img src={logo} alt="logo" />
           </Link>
         </div>
         {/* Center navigation links */}
